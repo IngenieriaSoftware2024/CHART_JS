@@ -13,6 +13,7 @@ $router->get('/', [AppController::class,'index']);
 
 // VENTA GRAFICAS
 $router->get('/ventas/grafica', [VentaController::class,'index']);
+$router->get('/API/venta/estadistica', [VentaController::class,'detalleVentaAPI']);
 
 // Comprueba y valida las rutas, que existan y les asigna las funciones del Controlador
 $router->comprobarRutas();

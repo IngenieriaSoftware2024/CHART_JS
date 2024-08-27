@@ -1,18 +1,11 @@
-<div class="row">
-    <div class="col-4  justify-content-center">
-        <h1 class="text-center mb-3"><b>COMPRAS REALIZADAS POR CLIENTES</b></h1>
-        <div class="row justify-content-center mb-3">
-            <div class="col-lg-4 d-flex justify-content-center">
-                <button class="btn btn-info w-75" type="button" id="BtnActualizar">Actualizar Graficas</button>
-            </div>
-        </div>
+<h1 class="text-center mb-2 text-primary"><b>COMPRAS REALIZADAS POR CLIENTES</b></h1>
+<div class="row justify-content-center">
+    <div class="col-lg-3 d-flex justify-content-center align-items-center">
+        <button class="btn btn-info btn-lg w-100 shadow-sm hover-shadow" type="button" id="BtnActualizar">Actualizar Gráficas</button>
     </div>
-    <div class="col">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <canvas id="ChartVentas"></canvas>
-            </div>
-        </div>
+    <div class="col-lg-6 d-flex justify-content-center align-items-center">
+        <canvas id="ChartVentaClientes"></canvas>
     </div>
 </div>
-<script src="<?= asset('./build/js/productos/estadistica.js') ?>"></script>
+
+<script src="<?= asset('./build/js/ventas/estadistica.js') ?>"></script>
